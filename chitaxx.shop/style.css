@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body.anasayfa .top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+body.anasayfa {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+
+.top-bar {
+    position: fixed;
+    font-family: 'Montserrat', sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#menu-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #000000;
+    padding-top: 100px;
+    transition: left 0.3s ease;
+    z-index: 1100;
+}
+
+.sidebar a {
+    display: contents;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 0px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+#user-icon {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: -20px;
+}
+
+#cart-shopping {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 80px;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    background-color: #000014;
+    color: #ffffff;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.görsel {
+    width: 100%;
+    height: 700px;
+    display: block;
+    margin-top: 6px;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    top: -440px;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 30px;
+}
+
+.Açıklama {
+    width: 100%;
+    max-width: 1980px;
+    margin: 0 auto;
+    background-color: black;
+    height: 300px;
+    border-radius: 0;
+    margin: 0px auto;
+    position: absolute;
+    z-index: -1;
+}
+
+.visa {
+    max-width: 37px;
+    display: block;
+    height: auto;
+    position: absolute;
+    left: 79.5%;
+    top: 84.1%;
+    flex-wrap: wrap;
+    z-index: -1;
+}
+
+.maestro {
+    max-width: 45px;
+    display: block;
+    height: auto;
+    position: absolute;
+    left: 79.3%;
+    top: 88.5%;
+    flex-wrap: wrap;
+    z-index: -1;
+}
+
+.mastercard {
+    max-width: 43px;
+    display: block;
+    height: auto;
+    position: absolute;
+    left: 79.4%;
+    top: 91.4%;
+    flex-wrap: wrap;
+    z-index: -1;
+}
+
+.insta-icon {
+    color: #ffffff;
+    font-size: 27px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 999;
+}
+
+.insta-icon:hover {
+    transform: rotate(10deg) scale(1.1);
+    color: #cccccc;
+}
+
+h2 {
+    color: white;
+    margin-top: -140px;
+    font-size: 19px;
+    margin-left: 200px;
+    text-shadow: 0 0 10px black;
+}
+
+.T-shirt {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-top: -130px;
+    margin-left: 203px;
+    text-shadow: 0 0 10px black;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img.container {
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    .görsel {
+        height: 900px;
+        max-height: 800px;
+        object-fit: cover;
+        width: 200%;
+        margin: 0 auto;
+        background-color: black;
+        border-radius: 0;
+        position: relative;
+        z-index: 1000;
+    }
+}
+
+@media (max-width: 768px) {
+    .visa {
+        max-width: 32px;
+        display: block;
+        height: auto;
+        position: fixed;
+        left: 71.7%;
+        top: 70.9%;
+        z-index: 999;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        color: white;
+        margin-top: -250px;
+        font-size: 19px;
+        margin-left: 50px;
+        text-shadow: 0 0 10px rgb(0, 0, 0);
+        z-index: 999;
+        position: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    .T-shirt {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        margin-top: -45%;
+        margin-left: 55px;
+        text-shadow: 0 0 10px black;
+        font-weight: 400;
+        z-index: 999;
+        position: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    .maestro {
+        max-width: 35px;
+        display: block;
+        height: auto;
+        position: fixed;
+        left: 92.2%;
+        top: 70.9%;
+        flex-wrap: wrap;
+        z-index: 999;
+    }
+}
+
+@media (max-width: 768px) {
+    .mastercard {
+        max-width: 34px;
+        display: block;
+        height: auto;
+        position: fixed;
+        left: 82.8%;
+        top: 70.1%;
+        flex-wrap: wrap;
+        z-index: 999;
+    }
+}
+
+@media (max-width: 768px) {
+    .Açıklama {
+        width: 100%;
+        max-width: 2000px;
+        margin: 0 auto;
+        background-color: black;
+        height: 300px;
+        border-radius: 0;
+        margin: 0px auto;
+        position: absolute;
+        z-index: 999;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+        margin-top: -3%;
+        z-index: 1000;
+    }
+}
+
+@media (max-width: 768px) {
+    body.anasayfa {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #ffffff;
+        padding-top: 50px;
+        overflow-x: hidden;
+        z-index: 999;
+    }
+}
+
+@media (max-width: 768px) {
+    .insta-icon {
+        color: #ffffff;
+        font-size: 25px;
+        text-decoration: none;
+        transition: transform 0.2s ease;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        top: 850px;
+        width: 40px;
+        height: 40px;
+        z-index: 999;
+    }
+}
